@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* button style */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Disabled state */
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Style for the input */
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  input {
+    padding: 16px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  svg {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+}
+
+.bg {
+  border-radius: 2rem;
+  background: linear-gradient(113deg, #ad36cb 32.23%, #333 67.37%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(255, 250, 250, 0.25),
+    0px 4px 4px 0px rgba(253, 245, 245, 0.25);
+}
+
+.history_element {
+  border-radius: 1.5625rem;
+  padding: 20px;
+  background: linear-gradient(180deg, #b32dd4 0%, rgba(217, 217, 217, 0) 100%);
+}
+.position_element {
+  border-radius: 1.5625rem;
+  background: linear-gradient(107deg, #373333 2.96%, rgba(55, 51, 51, 0) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
